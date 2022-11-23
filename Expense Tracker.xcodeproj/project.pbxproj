@@ -11,6 +11,7 @@
 		8CAEAB4F292EE7E7006E0681 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEAB4E292EE7E7006E0681 /* ContentView.swift */; };
 		8CAEAB51292EE7E8006E0681 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CAEAB50292EE7E8006E0681 /* Assets.xcassets */; };
 		8CAEAB54292EE7E8006E0681 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CAEAB53292EE7E8006E0681 /* Preview Assets.xcassets */; };
+		8CAEAB5E292EE9A9006E0681 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEAB5D292EE9A9006E0681 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		8CAEAB4E292EE7E7006E0681 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8CAEAB50292EE7E8006E0681 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CAEAB53292EE7E8006E0681 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8CAEAB5D292EE9A9006E0681 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,9 @@
 		8CAEAB4B292EE7E7006E0681 /* Expense Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				8CAEAB5C292EE966006E0681 /* ViewModel */,
+				8CAEAB5B292EE8B5006E0681 /* Model */,
+				8CAEAB5A292EE82D006E0681 /* View */,
 				8CAEAB4C292EE7E7006E0681 /* Expense_TrackerApp.swift */,
 				8CAEAB4E292EE7E7006E0681 /* ContentView.swift */,
 				8CAEAB50292EE7E8006E0681 /* Assets.xcassets */,
@@ -65,6 +70,28 @@
 				8CAEAB53292EE7E8006E0681 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8CAEAB5A292EE82D006E0681 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8CAEAB5D292EE9A9006E0681 /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8CAEAB5B292EE8B5006E0681 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8CAEAB5C292EE966006E0681 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CAEAB4F292EE7E7006E0681 /* ContentView.swift in Sources */,
+				8CAEAB5E292EE9A9006E0681 /* Home.swift in Sources */,
 				8CAEAB4D292EE7E7006E0681 /* Expense_TrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

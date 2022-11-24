@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class ExpenseView: ObservableObject {
+class ExpenseViewModel: ObservableObject {
     
     @Published var startDate: Date = Date()
     @Published var endDate: Date = Date()

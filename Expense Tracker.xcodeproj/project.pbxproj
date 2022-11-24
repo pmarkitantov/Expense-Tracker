@@ -14,6 +14,7 @@
 		8CAEAB5E292EE9A9006E0681 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEAB5D292EE9A9006E0681 /* Home.swift */; };
 		8CAEAB60292EEAAB006E0681 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEAB5F292EEAAB006E0681 /* Expense.swift */; };
 		8CAEAB62292EEC2D006E0681 /* ExpenseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEAB61292EEC2D006E0681 /* ExpenseViewModel.swift */; };
+		8CAEAB64292FFEFA006E0681 /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEAB63292FFEFA006E0681 /* TransactionCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		8CAEAB5D292EE9A9006E0681 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		8CAEAB5F292EEAAB006E0681 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		8CAEAB61292EEC2D006E0681 /* ExpenseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewModel.swift; sourceTree = "<group>"; };
+		8CAEAB63292FFEFA006E0681 /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				8CAEAB5D292EE9A9006E0681 /* Home.swift */,
+				8CAEAB63292FFEFA006E0681 /* TransactionCardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				8CAEAB4F292EE7E7006E0681 /* ContentView.swift in Sources */,
 				8CAEAB5E292EE9A9006E0681 /* Home.swift in Sources */,
 				8CAEAB4D292EE7E7006E0681 /* Expense_TrackerApp.swift in Sources */,
+				8CAEAB64292FFEFA006E0681 /* TransactionCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

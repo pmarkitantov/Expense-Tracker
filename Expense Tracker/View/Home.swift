@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Home: View {
-    @StateObject var expenseView: ExpenseView = .init()
+    @StateObject var expenseViewModel: ExpenseViewModel = .init()
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(spacing: 12) {
@@ -44,6 +44,7 @@ struct Home: View {
                     }
                 }
                 ExpenseCardView()
+                TransactionsView()
             }
             .padding()
         }
@@ -51,6 +52,25 @@ struct Home: View {
             Color("BG")
                 .ignoresSafeArea()
         }
+    }
+    
+    @ViewBuilder
+    func TransactionsView()->some View {
+        VStack{
+            Text("Transactions")
+                .font(.title2.bold())
+                .opacity(0.7)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.bottom)
+            
+            ForEach(expenseViewModel.expenses){expense in
+                TransactionCardView(expense: expense)
+                    .environmentObject(expenseViewModel)
+            }
+            
+            
+        }
+        .padding(.top)
     }
     
     @ViewBuilder
@@ -66,13 +86,13 @@ struct Home: View {
             
             VStack(spacing: 15) {
                 VStack(spacing: 15) {
-                    Text(expenseView.currentMonthDateString())
+                    Text(expenseViewModel.currentMonthDateString())
                         .font(.callout)
                         .fontWeight(.semibold)
                     
-                    Text(expenseView
+                    Text(expenseViewModel
                         .convertExpensesToCurrency(expenses:
-                        expenseView.expenses))
+                        expenseViewModel.expenses))
                     .font(.system(size: 35, weight: .bold))
                     .lineLimit(1)
                     .padding(.bottom, 5)
@@ -91,8 +111,8 @@ struct Home: View {
                             .font(.caption)
                             .opacity(0.7)
                         
-                        Text(expenseView
-                            .convertExpensesToCurrency(expenses: expenseView.expenses, type: .income))
+                        Text(expenseViewModel
+                            .convertExpensesToCurrency(expenses: expenseViewModel.expenses, type: .income))
                         .font(.callout)
                         .fontWeight(.semibold)
                         .lineLimit(1)
@@ -111,8 +131,8 @@ struct Home: View {
                             .font(.caption)
                             .opacity(0.7)
                         
-                        Text(expenseView
-                            .convertExpensesToCurrency(expenses: expenseView.expenses, type: .expense))
+                        Text(expenseViewModel
+                            .convertExpensesToCurrency(expenses: expenseViewModel.expenses, type: .expense))
                         .font(.callout)
                         .fontWeight(.semibold)
                         .lineLimit(1)

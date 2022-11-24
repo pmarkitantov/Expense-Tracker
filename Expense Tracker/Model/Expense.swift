@@ -20,6 +20,7 @@ struct Expense: Identifiable, Hashable {
 enum ExpenseType: String {
     case income = "Income"
     case expense = "expenses"
+    case all = "ALL"
 }
 
 var sample_expenses: [Expense] = [

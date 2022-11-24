@@ -77,6 +77,51 @@ struct Home: View {
                     .lineLimit(1)
                     .padding(.bottom, 5)
                 }
+                .offset(y: -10)
+                
+                HStack(spacing: 15){
+                    Image(systemName: "arrow.down")
+                        .font(.caption.bold())
+                        .foregroundColor(Color("Green"))
+                        .frame(width: 30, height: 30)
+                        .background(.white.opacity(0.7), in: Circle())
+                    
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("Income")
+                            .font(.caption)
+                            .opacity(0.7)
+                        
+                        Text(expenseView
+                            .convertExpensesToCurrency(expenses: expenseView.expenses, type: .income))
+                        .font(.callout)
+                        .fontWeight(.semibold)
+                        .lineLimit(1)
+                        .fixedSize()
+                    }
+                    .frame(maxWidth: .infinity,alignment: .leading)
+                    
+                    Image(systemName: "arrow.up")
+                        .font(.caption.bold())
+                        .foregroundColor(Color(.red))
+                        .frame(width: 30, height: 30)
+                        .background(.white.opacity(0.7), in: Circle())
+                    
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("Expenses")
+                            .font(.caption)
+                            .opacity(0.7)
+                        
+                        Text(expenseView
+                            .convertExpensesToCurrency(expenses: expenseView.expenses, type: .expense))
+                        .font(.callout)
+                        .fontWeight(.semibold)
+                        .lineLimit(1)
+                        .fixedSize()
+                    }
+                }
+                .padding(.horizontal)
+                .padding(.trailing)
+                .offset(y:15)
             }
             .foregroundColor(.white)
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)

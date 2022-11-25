@@ -32,12 +32,18 @@ class ExpenseViewModel: ObservableObject {
             return partialResult + (type == .all ? (expense.type == .income ? expense.amount : -expense.amount) : (expense.type == type ? expense.amount : 0))
             
         })
+        return convertNumberToPrice(value: value)
+    }
+    
+    func convertNumberToPrice(value:Double)->String {
+        
         let polandLocale = Locale(identifier: "pl_PL")
         let formatter = NumberFormatter()
         formatter.locale = polandLocale
         formatter.numberStyle = .currency
         
         return formatter.string(from: .init(value: value)) ?? "$0.00"
+        
     }
     
 }

@@ -12,6 +12,16 @@ class ExpenseViewModel: ObservableObject {
     @Published var startDate: Date = Date()
     @Published var endDate: Date = Date()
     @Published var currentMonthStartDate: Date = Date()
+    @Published var tabName: ExpenseType = .expense
+    @Published var showFilterView: Bool = false
+    
+    @Published var addNewExpense: Bool = false
+    @Published var amount: String = ""
+    @Published var type: ExpenseType = .all
+    @Published var date: Date = Date()
+    @Published var remark: String = ""
+    
+    
     
     init(){
         let calendar = Calendar.current
@@ -33,6 +43,10 @@ class ExpenseViewModel: ObservableObject {
             
         })
         return convertNumberToPrice(value: value)
+    }
+    
+    func convertDateToString()->String{
+        return startDate.formatted(date: .abbreviated, time: .omitted) + " - " + endDate.formatted(date:.abbreviated, time: .omitted)
     }
     
     func convertNumberToPrice(value:Double)->String {

@@ -60,7 +60,7 @@ class ExpenseViewModel: ObservableObject {
         
     }
     
-    func clearData(){
+    func clearData() {
         date = Date()
         type = .all
         remark = ""
@@ -68,7 +68,7 @@ class ExpenseViewModel: ObservableObject {
     }
     
     func saveData(env: EnvironmentValues){
-        print("hui")
+        print("save data triggered")
         let amountInDouble = (amount as NSString).doubleValue
         let colors = ["Yellow", "Red", "Purple","Green"]
         let expense = Expense(remark: remark, amount: amountInDouble, date: date, type: type,

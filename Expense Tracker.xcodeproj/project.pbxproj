@@ -8,10 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8CAEAB4D292EE7E7006E0681 /* Expense_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEAB4C292EE7E7006E0681 /* Expense_TrackerApp.swift */; };
-		8CAEAB4F292EE7E7006E0681 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEAB4E292EE7E7006E0681 /* ContentView.swift */; };
 		8CAEAB51292EE7E8006E0681 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CAEAB50292EE7E8006E0681 /* Assets.xcassets */; };
 		8CAEAB54292EE7E8006E0681 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CAEAB53292EE7E8006E0681 /* Preview Assets.xcassets */; };
-		8CAEAB5E292EE9A9006E0681 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEAB5D292EE9A9006E0681 /* Home.swift */; };
+		8CAEAB5E292EE9A9006E0681 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEAB5D292EE9A9006E0681 /* HomeView.swift */; };
 		8CAEAB60292EEAAB006E0681 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEAB5F292EEAAB006E0681 /* Expense.swift */; };
 		8CAEAB62292EEC2D006E0681 /* ExpenseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEAB61292EEC2D006E0681 /* ExpenseViewModel.swift */; };
 		8CAEAB64292FFEFA006E0681 /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEAB63292FFEFA006E0681 /* TransactionCardView.swift */; };
@@ -23,10 +22,9 @@
 /* Begin PBXFileReference section */
 		8CAEAB49292EE7E7006E0681 /* Expense Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Expense Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CAEAB4C292EE7E7006E0681 /* Expense_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense_TrackerApp.swift; sourceTree = "<group>"; };
-		8CAEAB4E292EE7E7006E0681 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8CAEAB50292EE7E8006E0681 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CAEAB53292EE7E8006E0681 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		8CAEAB5D292EE9A9006E0681 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		8CAEAB5D292EE9A9006E0681 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8CAEAB5F292EEAAB006E0681 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		8CAEAB61292EEC2D006E0681 /* ExpenseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewModel.swift; sourceTree = "<group>"; };
 		8CAEAB63292FFEFA006E0681 /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
@@ -69,7 +67,6 @@
 				8CAEAB5B292EE8B5006E0681 /* Model */,
 				8CAEAB5A292EE82D006E0681 /* View */,
 				8CAEAB4C292EE7E7006E0681 /* Expense_TrackerApp.swift */,
-				8CAEAB4E292EE7E7006E0681 /* ContentView.swift */,
 				8CAEAB50292EE7E8006E0681 /* Assets.xcassets */,
 				8CAEAB52292EE7E8006E0681 /* Preview Content */,
 			);
@@ -87,7 +84,7 @@
 		8CAEAB5A292EE82D006E0681 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8CAEAB5D292EE9A9006E0681 /* Home.swift */,
+				8CAEAB5D292EE9A9006E0681 /* HomeView.swift */,
 				8CAEAB63292FFEFA006E0681 /* TransactionCardView.swift */,
 				8CAEAB6529310AB3006E0681 /* FilteredDetailView.swift */,
 				8CAEAB672931159E006E0681 /* ExpenseCard.swift */,
@@ -186,8 +183,7 @@
 				8CAEAB6629310AB3006E0681 /* FilteredDetailView.swift in Sources */,
 				8CAEAB60292EEAAB006E0681 /* Expense.swift in Sources */,
 				8CF3B0D12942585B003A9215 /* NewExpense.swift in Sources */,
-				8CAEAB4F292EE7E7006E0681 /* ContentView.swift in Sources */,
-				8CAEAB5E292EE9A9006E0681 /* Home.swift in Sources */,
+				8CAEAB5E292EE9A9006E0681 /* HomeView.swift in Sources */,
 				8CAEAB4D292EE7E7006E0681 /* Expense_TrackerApp.swift in Sources */,
 				8CAEAB682931159E006E0681 /* ExpenseCard.swift in Sources */,
 				8CAEAB64292FFEFA006E0681 /* TransactionCardView.swift in Sources */,
@@ -328,7 +324,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -359,7 +355,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

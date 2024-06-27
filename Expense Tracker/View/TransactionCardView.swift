@@ -49,9 +49,4 @@ struct TransactionCardView: View {
         }
     }
     
-    struct TransactionCardView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView()
-        }
-    }
 }
